@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="850.0" styleClass="Pane_background_center" stylesheets="@CssFile/RegPage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medisoft.HelloControllerRegPage">
+   <children>
+      <Label layoutX="345.0" layoutY="62.0" text="-----RAGISTRATION-----">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="135.0" layoutY="106.0" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="PENCIL" size="20" textAlignment="CENTER" wrappingWidth="19.0" />
+            <TextField fx:id="name" prefHeight="37.0" prefWidth="261.0" promptText="name">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="437.0" layoutY="106.0" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="USER" size="20" textAlignment="CENTER" wrappingWidth="19.0" />
+            <TextField fx:id="userName" prefHeight="38.0" prefWidth="260.0" promptText="username">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="135.0" layoutY="170.0" prefHeight="36.0" prefWidth="120.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="CALENDAR" size="20" textAlignment="CENTER" wrappingWidth="19.0" />
+            <TextField fx:id="age" prefHeight="37.0" prefWidth="101.0" promptText="age">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="270.0" layoutY="170.0" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="VENUS_MARS" size="20" textAlignment="CENTER" wrappingWidth="24.0" />
+            <TextField fx:id="gender" prefHeight="37.0" prefWidth="121.0" promptText="gender">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="437.0" layoutY="170.0" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="PHONE" size="20" textAlignment="CENTER" wrappingWidth="19.0" />
+            <TextField fx:id="contact" prefHeight="37.0" prefWidth="261.0" promptText="contact">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="133.0" layoutY="231.0" prefHeight="36.0" prefWidth="585.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="ENVELOPE" size="20" textAlignment="CENTER" wrappingWidth="19.0" />
+            <TextField fx:id="mail" prefHeight="37.0" prefWidth="564.0" promptText="mail">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="133.0" layoutY="293.0" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="LOCK" size="20" textAlignment="CENTER" wrappingWidth="19.0" />
+            <TextField fx:id="password" prefHeight="37.0" prefWidth="261.0" promptText="password">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="437.0" layoutY="293.0" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: WHITE;">
+         <children>
+            <FontAwesomeIcon glyphName="LOCK" size="20" textAlignment="CENTER" wrappingWidth="19.0" />
+            <TextField fx:id="confirmPassword" prefHeight="37.0" prefWidth="261.0" promptText="confirm password">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <CheckBox fx:id="checkBox" layoutX="133.0" layoutY="351.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="245.0" text="I agree with all terms &amp; conditions" textAlignment="CENTER" />
+      <Button fx:id="registartionButton" layoutX="133.0" layoutY="424.0" mnemonicParsing="false" onAction="#registrationButton" prefHeight="36.0" prefWidth="280.0" text="Ragistration" textFill="WHITE" />
+      <Label fx:id="msg" layoutX="135.0" layoutY="389.0" prefHeight="17.0" prefWidth="516.0" textFill="RED" />
+      <Button fx:id="back" layoutX="438.0" layoutY="424.0" mnemonicParsing="false" onAction="#backToLoginPage" prefHeight="36.0" prefWidth="280.0" text="Back" textFill="WHITE" />
+   </children>
+</Pane>

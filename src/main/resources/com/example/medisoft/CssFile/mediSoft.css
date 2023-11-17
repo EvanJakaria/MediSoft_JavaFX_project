@@ -1,0 +1,11 @@
+
+.Pane_background_center{
+    -fx-background-image: url("../Image/RDoc.jpg");
+    -fx-background-size: cover;
+    -fx-border-color: #007376;
+}
+
+.button{
+    -fx-background-radius: 15px;
+    -fx-background-color: #007376;
+}

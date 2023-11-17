@@ -1,0 +1,23 @@
+.Pane_background_center{
+    -fx-background-image: url("../Image/Ldoc.jpg");
+    -fx-background-size: cover;
+    -fx-border-color: #007376;
+}
+
+.button{
+    -fx-background-radius: 15px;
+    -fx-background-color: #007376;
+}
+
+.Vbox{
+
+    -fx-border-radius: 10px;
+    -fx-border-color: #007376;
+}
+.text-field{
+    -fx-background-color: white;
+}
+
+.label{
+    --block-text-color: red;
+}

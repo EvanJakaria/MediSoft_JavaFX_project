@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="780.0" styleClass="Pane_background_center" stylesheets="@CssFile/mediSoft.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medisoft.HelloController">
+   <children>
+      <TextField fx:id="username" layoutX="501.0" layoutY="152.0" prefHeight="27.0" prefWidth="227.0" promptText="username" />
+      <TextField fx:id="password" layoutX="501.0" layoutY="210.0" prefHeight="27.0" prefWidth="227.0" promptText="password" />
+      <Button fx:id="loginButton" layoutX="352.0" layoutY="303.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="29.0" prefWidth="376.0" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="signUpButton" layoutX="352.0" layoutY="346.0" mnemonicParsing="false" onAction="#signUpButton" prefHeight="29.0" prefWidth="376.0" text="SINGN UP" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="msg" layoutX="354.0" layoutY="257.0" prefHeight="17.0" prefWidth="376.0" textAlignment="CENTER" textFill="#f50000" />
+      <ImageView fx:id="exit" fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/exit.png" />
+         </image>
+      </ImageView>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" />
+   </padding>
+</Pane>
